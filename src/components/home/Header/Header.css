@@ -1,0 +1,69 @@
+.KongeLogo{
+width: 35px;
+height: 40px;
+
+/* margin-left: 400%; */
+}
+
+.cdden{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+    -o-transform: translate(-50%, -50%); /* Opera */
+    transform: translate(-50%, -50%);
+   
+}
+
+.bod{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #000;
+}
+
+.pp {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.cat{
+  margin-top: 3px;
+  margin-left: -5px;
+  font-size: 13.5px;
+  color: #000000;
+font-style:initial;}
+
+.searchbar{
+  margin-left: -30px;
+}
+
+.siz{
+  /* border-radius: 50%;
+  background-color: bisque; */
+
+}
