@@ -11,7 +11,7 @@ cursor: pointer;
 
 .image-wrapper {
   flex: 1 1 calc(25% - 20px);  /* Adjusted for gap */
-  max-width: calc(25% - 50px); /* Adjusted for gap */
+  max-width: calc(25% - 40px); /* Adjusted for gap */
   overflow: hidden;
   position: relative;
   text-align: center;  /* Center the title text */
@@ -28,13 +28,17 @@ cursor: pointer;
 
 .image-wrapper img {
   width: 100%;
-  height: 350px;
+  height: 280px;
   display: block;
 }
 
 .image-title {
   margin-top: 20px;
   color: #000000;
+font-family: monospace;
+font-size: 18px;
+text-decoration-line:overline;
+
 }
 
 @media (max-width: 1200px) {

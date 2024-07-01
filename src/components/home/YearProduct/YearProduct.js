@@ -4,13 +4,8 @@ import image from '../../../assets/images/368003341_682331940583564_119194952562
 
 const YearProduct = () => {
   return (
-    <div className="slideshow">
-    <div className="slides">
-        <div className="slide"><img src={image} alt="Image 1"/></div>
-        <div className="slide"><img src={image} alt="Image 2"/></div>
-        <div className="slide"><img src={image} alt="Image 3"/></div>
-        <div className="slide"><img src={image} alt="Image 4"/></div>
-    </div>
+    <div className="">
+  
 </div>
   );
 };

@@ -22,9 +22,9 @@ const Cart = () => {
   }, [products]);
   useEffect(() => {
     if (totalAmt <= 200) {
-      setShippingCharge(30);
-    } else if (totalAmt <= 400) {
-      setShippingCharge(25);
+      setShippingCharge(7);
+    } else if (totalAmt <= 900) {
+      setShippingCharge(7);
     } else if (totalAmt > 401) {
       setShippingCharge(20);
     }
@@ -38,7 +38,7 @@ const Cart = () => {
             <h2 className="col-span-2">Product</h2>
             <h2>Price</h2>
             <h2>Quantity</h2>
-            <h2>Sub Total</h2>
+            <h2>Total</h2>
           </div>
           <div className="mt-5">
             {products.map((item) => (
@@ -73,21 +73,21 @@ const Cart = () => {
               <h1 className="text-2xl font-semibold text-right">Cart totals</h1>
               <div>
                 <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
-                  Subtotal
+                  Total
                   <span className="font-semibold tracking-wide font-titleFont">
-                    ${totalAmt}
+                    TND {totalAmt}
                   </span>
                 </p>
                 <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
-                  Shipping Charge
+                  Delivery
                   <span className="font-semibold tracking-wide font-titleFont">
-                    ${shippingCharge}
+                    TND {shippingCharge}
                   </span>
                 </p>
                 <p className="flex items-center justify-between border-[1px] border-gray-400 py-1.5 text-lg px-4 font-medium">
                   Total
                   <span className="font-bold tracking-wide text-lg font-titleFont">
-                    ${totalAmt + shippingCharge}
+                    TND {totalAmt + shippingCharge}
                   </span>
                 </p>
               </div>
